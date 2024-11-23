@@ -1,11 +1,11 @@
-document.querySelectorAll('.navbar a').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const targetId = e.target.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      window.scrollTo({
-        top: targetElement.offsetTop - 50,
-        behavior: 'smooth'
-      });
+// Smooth scroll for navigation
+document.querySelectorAll(".navbar a").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const target = document.querySelector(event.target.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   });
+});
