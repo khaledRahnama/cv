@@ -124,3 +124,21 @@ footer {
   padding: 20px 0;
   margin-top: 40px;
 }
+
+
+
+
+.rainbow-text {
+  font-size: 3rem;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.rainbow-text span {
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
